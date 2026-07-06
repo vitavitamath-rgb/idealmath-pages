@@ -530,7 +530,8 @@ h3 {
   margin-top: 20px;
 }
 
-.contact-list a {
+.contact-list a,
+.contact-row {
   display: flex;
   justify-content: space-between;
   gap: 16px;
@@ -538,7 +539,8 @@ h3 {
   border-bottom: 1px solid var(--line);
 }
 
-.contact-list span {
+.contact-list span,
+.contact-row span {
   color: var(--muted);
   font-size: 14px;
 }
@@ -662,6 +664,10 @@ h3 {
   background: var(--white);
 }
 
+.video-card.media-only {
+  grid-template-columns: 1fr;
+}
+
 .video-frame {
   width: 100%;
   aspect-ratio: 16 / 9;
@@ -699,6 +705,20 @@ h3 {
   color: var(--white);
   font-size: 14px;
   font-weight: 800;
+}
+
+.demo-social {
+  padding-top: 0;
+}
+
+.demo-social-layout {
+  display: grid;
+  grid-template-columns: minmax(260px, 480px);
+  justify-content: center;
+}
+
+.demo-instagram-link img {
+  min-height: auto;
 }
 
 .gallery-grid {
